@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,44 +15,24 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_7_05_SelectingText" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iws-Wd-81A">
-                                <rect key="frame" x="20" y="98" width="374" height="694"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <attributes>
-                                            <font key="NSFont" size="17" name="Georgia"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected text here" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glJ-sn-Vhm">
-                                <rect key="frame" x="20" y="64" width="374" height="24"/>
-                                <color key="backgroundColor" red="0.50196078431372548" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leG-71-cYU">
-                                <rect key="frame" x="20" y="802" width="177" height="40"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Select text">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leG-71-cYU" userLabel="Select">
+                                <rect key="frame" x="10" y="607" width="172.5" height="40"/>
+                                <color key="backgroundColor" red="0.21156577469999999" green="0.95742251330000006" blue="0.024932877950000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                                <state key="normal" title="Select">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="didSelectText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="akh-JW-CJ6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uh3-Z6-eZp">
-                                <rect key="frame" x="217" y="802" width="177" height="40"/>
+                                <rect key="frame" x="192.5" y="607" width="172.5" height="40"/>
                                 <color key="backgroundColor" red="0.21156577469999999" green="0.95742251330000006" blue="0.024932877950000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
                                 <state key="normal" title="Bold">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
@@ -60,23 +40,43 @@
                                     <action selector="didBoldFont:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z2K-y9-ayR"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glJ-sn-Vhm">
+                                <rect key="frame" x="10" y="40" width="345" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iws-Wd-81A">
+                                <rect key="frame" x="0.0" y="61.5" width="375" height="545.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">My text goes here in the text view. It will be the history of Pizza from the beginning of its popularity in the 1800's to the food we love today. </string>
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Georgia"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="glJ-sn-Vhm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2GY-8h-EF2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Iws-Wd-81A" secondAttribute="trailing" constant="20" id="9OA-D2-eZy"/>
-                            <constraint firstItem="leG-71-cYU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="AlS-cH-NXD"/>
+                            <constraint firstItem="glJ-sn-Vhm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="2GY-8h-EF2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Iws-Wd-81A" secondAttribute="trailing" id="9OA-D2-eZy"/>
+                            <constraint firstItem="leG-71-cYU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="AlS-cH-NXD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="glJ-sn-Vhm" secondAttribute="trailing" constant="20" id="EqV-Gj-JZi"/>
-                            <constraint firstItem="Uh3-Z6-eZp" firstAttribute="top" secondItem="Iws-Wd-81A" secondAttribute="bottom" constant="10" id="Icw-vX-hne"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uh3-Z6-eZp" secondAttribute="trailing" constant="20" id="IoR-0I-qKp"/>
-                            <constraint firstItem="Iws-Wd-81A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NBM-EY-0r1"/>
-                            <constraint firstItem="Iws-Wd-81A" firstAttribute="top" secondItem="glJ-sn-Vhm" secondAttribute="bottom" constant="10" id="XYp-41-Tt5"/>
+                            <constraint firstItem="Uh3-Z6-eZp" firstAttribute="top" secondItem="Iws-Wd-81A" secondAttribute="bottom" id="Icw-vX-hne"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uh3-Z6-eZp" secondAttribute="trailing" constant="10" id="IoR-0I-qKp"/>
+                            <constraint firstItem="Iws-Wd-81A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NBM-EY-0r1"/>
+                            <constraint firstItem="Iws-Wd-81A" firstAttribute="top" secondItem="glJ-sn-Vhm" secondAttribute="bottom" id="XYp-41-Tt5"/>
                             <constraint firstItem="glJ-sn-Vhm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="a3s-2H-0sy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Uh3-Z6-eZp" secondAttribute="bottom" constant="20" id="bZa-as-QVS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="leG-71-cYU" secondAttribute="bottom" constant="20" id="mlY-0Q-gVZ"/>
                             <constraint firstItem="Uh3-Z6-eZp" firstAttribute="width" secondItem="leG-71-cYU" secondAttribute="width" id="oyM-UV-7h5"/>
-                            <constraint firstItem="Uh3-Z6-eZp" firstAttribute="leading" secondItem="leG-71-cYU" secondAttribute="trailing" constant="20" id="vvD-qE-nNE"/>
-                            <constraint firstItem="leG-71-cYU" firstAttribute="top" secondItem="Iws-Wd-81A" secondAttribute="bottom" constant="10" id="wsY-aj-LlN"/>
+                            <constraint firstItem="Uh3-Z6-eZp" firstAttribute="leading" secondItem="leG-71-cYU" secondAttribute="trailing" constant="10" id="vvD-qE-nNE"/>
+                            <constraint firstItem="leG-71-cYU" firstAttribute="top" secondItem="Iws-Wd-81A" secondAttribute="bottom" id="wsY-aj-LlN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -87,6 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="77.599999999999994" y="69.715142428785612"/>
         </scene>
     </scenes>
 </document>
